@@ -1,0 +1,13 @@
+addContainer	pcr_plate_96	96_test1	deck/A1	FALSE
+addContainer	pcr_plate_96	96_test2	deck/B2	FALSE
+addContainer	extra	test_1	deck/Side	FALSE
+addContainer	extra	test_2	deck/Side	FALSE
+dispense	water	test_1	10
+addContainer	extra	test_3	deck/Side	FALSE
+addContainer	extra	test_4	deck/Side	FALSE
+removeContainer	test_2
+addContainer	extra	test_5	deck/Side	FALSE
+transfer	96_test1/D3	test_3	2
+addContainer	extra	test_6	deck/Side	FALSE
+addContainer	extra	test_7	deck/Side	FALSE
+addContainer	extra	test_8	deck/Side	FALSE

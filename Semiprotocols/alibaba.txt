@@ -1,0 +1,21 @@
+addContainer	pcr_plate_96	alibaba_oligos	deck/A1	FALSE
+addContainer	pcr_plate_96	alibaba_pcrs_1	deck/B2	FALSE
+addContainer	pcr_plate_96	test1	deck/B1	TRUE
+addContainer	pcr_plate_96	test2	deck/A2	TRUE
+				
+transfer	alibaba_oligos/D3	alibaba_pcrs_1/A1	2
+transfer	alibaba_oligos/F6	alibaba_pcrs_1/A1	3
+transfer	alibaba_oligos/A6	alibaba_pcrs_1/A2	6	
+transfer	alibaba_oligos/E2	alibaba_pcrs_1/A2	56	
+
+removeContainer	alibaba_pcrs_1
+
+dispense	water	alibaba_oligos/H12	20
+				
+addContainer	pcr_plate_96	random_plate	deck/A2	TRUE
+
+multichannel	alibaba_oligos/A1	alibaba_oligos/F1	test2/C1	test2/C6	1000
+				
+transfer	alibaba_oligos/A1	random_plate/H12	32	
+transfer	alibaba_oligos/A2	random_plate/H12	32	
+transfer	alibaba_oligos/A3	random_plate/H12	32
